@@ -6,6 +6,8 @@ adventure with Android and Firebase. I have developed a system, where
 users in Bulgaria send proofs of completing task to judges in Poland. Then
 they assign score, which adds up to the total scoreboard.
 <br><br>
+This is my first own initiative project and at the same time it is the bigest Android app I have made so far _( over 10 000 lines of .java code )_. Written last summer right after completing _"Android Basics Nanodegree Program"_ on _Udacity_. This summer I am going to rewrite it from scratch to improve code quality and add new functionalities.
+
 
 ### Process of Creation
 ![](https://raw.githubusercontent.com/poznas/BSM-App/master/creation_process_1.JPG)
