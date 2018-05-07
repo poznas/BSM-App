@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "637291876091",
+    "firebase_url": "https://bulgarskaszkolamagii.firebaseio.com",
+    "project_id": "bulgarskaszkolamagii",
+    "storage_bucket": "bulgarskaszkolamagii.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637291876091:android:9f0d0b1d977ae7eb",
+        "android_client_info": {
+          "package_name": "com.bsmapps.bulgarskaszkolamagii"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "637291876091-uc0uefa78itatq350uc8sjjoati8ee8u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bsmapps.bulgarskaszkolamagii",
+            "certificate_hash": "e090cbc42c0a36ec1228c7c2d0eabad6f9f76efa"
+          }
+        },
+        {
+          "client_id": "637291876091-lc78d11s86huiap6c7kavm9bsk8f5gl6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbUIPXTtzB8D21qKnNXRUn31fovknHkJw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "637291876091-lc78d11s86huiap6c7kavm9bsk8f5gl6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

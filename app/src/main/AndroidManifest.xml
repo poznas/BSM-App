@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.bsmapps.bulgarskaszkolamagii">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".login.LoginActivity" />
+        <activity
+            android:name=".home.MainActivity"
+            android:launchMode="singleTop" />
+        <activity android:name=".login.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".wizzards.PrivilegeWizzardsActivity"
+            android:label="Czarodzieje" />
+        <activity
+            android:name=".sminfo.SideMissionsInfoActivity"
+            android:label="Misje Poboczne" />
+        <activity
+            android:name=".mcinfo.MainCompetitionInfoActivity"
+            android:label="Konkurencje Główne" />
+        <activity
+            android:name=".calendar.CalendarDaysActivity"
+            android:label="Kalendarz" />
+        <activity
+            android:name=".calendar.CalendarTimesActivity"
+            android:label="Kalendarz" />
+        <activity android:name=".points.PointsListActivity" />
+        <activity android:name=".points.result_display.MCResultDisplayActivity" />
+        <activity android:name=".points.result_display.BetResultDisplayActivity" />
+        <activity android:name=".points.result_display.MedalResultDisplayActivity" />
+        <activity
+            android:name=".adding.AddMCActivity"
+            android:label="Konkurencja Główna" />
+        <activity
+            android:name=".adding.AddBetActivity"
+            android:label="Zakład" />
+        <activity
+            android:name=".adding.AddMedalActivity"
+            android:label="Medal" />
+        <activity
+            android:name=".adding.MedalEditDetailsActivity"
+            android:label="Medal" />
+        <activity android:name=".points.result_display.SMPostResultDisplayActivity" />
+
+        <service
+            android:name=".fcm.InstanceIdService"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".fcm.MessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".PhotoVideoFullscreenDisplay"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".zongler.ZonglerActivity"
+            android:label="Żongler" />
+        <activity android:name=".points.result_display.SMResultDisplayActivity" />
+        <activity android:name=".adding.addsm.AddSMListActivity" />
+        <activity android:name=".adding.addsm.AddSMDetailsActivity" />
+        <activity android:name=".adding.addsm.AddSMPostActivity" />
+        <activity android:name=".judge.JudgeSMListActivity" />
+        <activity android:name=".judge.JudgeSideMissionActivity" />
+        <activity android:name=".judge.JudgeSMPostActivity" />
+        <activity android:name=".prof.ProfRateSMListActivity" />
+        <activity android:name=".prof.ProfRateSideMissionActivity" />
+        <activity android:name=".prof.ProfRateSMPostActivity"></activity>
+
+        <service android:name=".adding.addsm.ReportUploader"
+            android:exported="true"
+            android:process="bsm.upload"/>
+
+        <receiver android:name=".adding.addsm.UploadStorageWakefulReceiver">
+            <intent-filter>
+                <action android:name="com.bsmapps.bulgarskaszkolamagii.adding.addsm.android.action.broadcast"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

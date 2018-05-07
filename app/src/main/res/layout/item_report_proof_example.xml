@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_proof_type_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        tools:text="Zdjęcie lub video" />
+
+        <ImageView
+            android:id="@+id/item_example_view"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:layout_height="128dp"
+            tools:src="@mipmap/mewy"/>
+
+    <TextView
+        android:id="@+id/item_hint_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:textSize="16dp"
+        tools:text="Ujmujące moment styku ust osoby obranej za cel z cialem czarodzieja wykonującego."/>
+
+    <View
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:background="@color/black_overlay"
+        android:layout_height="1dp"/>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BSM</string>
+    <string name="sign_out">Wyloguj</string>
+
+    <string name="title_activity_photo_video_fullscreen">PhotoVideoFullscreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:id="@+id/media_recycler">
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:paddingTop="8dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/sm_name_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_gravity="center"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    tools:text="Don Juan" />
+
+                <ImageView
+                    android:id="@+id/google_drive_view"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:src="@mipmap/gd_icon"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="24dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/performing_user_image_view"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    tools:src="@mipmap/sensum"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/performing_user_name_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_gravity="center"
+                    android:paddingLeft="8dp"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    tools:text="Lipski" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="2dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="24dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/recording_user_image_view"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    tools:src="@mipmap/sensum"
+                    android:layout_gravity="center_vertical"/>
+
+                <TextView
+                    android:id="@+id/recording_user_name_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_gravity="center"
+                    android:paddingLeft="8dp"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    tools:text="Lipski" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="24dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="Oceny:" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/points_view"
+                    android:layout_width="96dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:textSize="24dp"
+                    android:textStyle="bold"
+                    tools:textColor="@color/red"
+                    tools:text="17" />
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/properities_recycler">
+            </android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/time_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                tools:text="22:07"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/date_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:gravity="center_horizontal"
+                tools:text="25 wrzesnia"
+                android:textSize="12dp" />
+        </LinearLayout>
+    </TableLayout>
+</ScrollView>
